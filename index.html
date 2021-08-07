@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            position: relative;
+        }
+
+        .buttons{
+            position: absolute;
+            top: 0;
+            /* background-color: red; */
+            height: 350px;
+            text-align: center;
+        }
+
+        .btn{
+            position: relative;
+            top: 100%;
+            transform: translateY(-380%);
+            height: 25px;
+            opacity: 0.0;
+        }
+        .btn:hover{
+            cursor: pointer;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video id="vd" height="350"  src="./assets/meme.mp4"></video>
+        <div class="buttons">
+            <img class="btn" onclick="diminuir_vel()" src="./assets/images/minus.png" alt="minus">
+            <img class="btn" onclick="aumentar_vel()" src="./assets/images/plus.png" alt="plus">
+            <img class="btn" onclick="comecar()" src="./assets/images/play.png" alt="play">
+            <img class="btn" onclick="parar()" src="./assets/images/stop.png" alt=stop">
+            <img class="btn" onclick="avancar()" src="./assets/images/forward.png" alt="forward">
+            <img class="btn" onclick="retroceder()" src="./assets/images/back.png" alt="back">
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
